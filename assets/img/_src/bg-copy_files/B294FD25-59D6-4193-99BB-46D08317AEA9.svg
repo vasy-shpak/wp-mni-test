@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640px" height="542px" viewBox="0 0 640 542" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53 (72520) - https://sketchapp.com -->
+    <title>3E256CB8-1421-4C25-95AD-0FDB015DC201</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-17.1%" y="-17.1%" width="134.3%" height="134.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-19.6%" y="-19.7%" width="139.3%" height="139.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-7.9%" y="-7.9%" width="115.8%" height="115.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-26.3%" y="-26.4%" width="152.7%" height="152.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-35.0%" y="-35.0%" width="170.0%" height="170.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-23.3%" y="-23.4%" width="146.6%" height="147.2%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-77.2%" y="-77.3%" width="254.9%" height="255.3%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-10.1%" y="-10.1%" width="120.2%" height="120.2%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="11" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-15.3%" y="-15.3%" width="130.7%" height="130.7%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="11" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.220443619 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="V1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MNI_1920" transform="translate(-1280.000000, 0.000000)">
+            <g id="Group-4" transform="translate(-296.000000, -220.000000)">
+                <g id="BG-Copy" transform="translate(1592.000000, 0.000000)">
+                    <g id="Group-20">
+                        <g id="Group-5-Copy-2" filter="url(#filter-1)" transform="translate(452.167068, 614.762892) scale(1, -1) rotate(-90.000000) translate(-452.167068, -614.762892) translate(326.322892, 489.124922)">
+                            <polygon id="Rectangle-Copy-3" fill="#0675D4" transform="translate(125.907256, 125.957350) rotate(-45.000000) translate(-125.907256, -125.957350) " points="36.9652688 37.6406288 214.70453 37.7863688 214.849244 214.274072 37.1099825 214.128332"></polygon>
+                            <polygon id="Rectangle" fill="#0068C0" transform="translate(125.907256, 125.957350) rotate(-45.000000) translate(-125.907256, -125.957350) " points="36.9652688 37.6406288 214.849244 214.274072 37.1099825 214.128332"></polygon>
+                        </g>
+                        <g id="Group-5-Copy-4" filter="url(#filter-2)" transform="translate(704.816064, 333.755829) scale(1, -1) translate(-704.816064, -333.755829) translate(595.302811, 224.422023)">
+                            <polygon id="Rectangle-Copy-3" fill="#0675D4" transform="translate(109.568147, 109.611740) rotate(-45.000000) translate(-109.568147, -109.611740) " points="32.1682492 32.755967 186.84211 32.8827942 186.968045 186.467513 32.2941833 186.340686"></polygon>
+                            <polygon id="Rectangle" fill="#0068C0" transform="translate(109.568147, 109.611740) rotate(-45.000000) translate(-109.568147, -109.611740) " points="32.1682492 32.755967 186.968045 186.467513 32.2941833 186.340686"></polygon>
+                        </g>
+                        <g id="Group-5" filter="url(#filter-3)" transform="translate(127.509237, 70.052930)">
+                            <polygon id="Rectangle-Copy-3" fill="#1787E6" transform="translate(272.920367, 273.029350) rotate(-45.000000) translate(-272.920367, -273.029350) " points="79.4206229 80.8899176 466.105276 81.2069855 466.420111 465.168783 79.7354582 464.851715"></polygon>
+                            <polygon id="Rectangle" fill="#1978C7" transform="translate(272.920367, 273.029350) rotate(-45.000000) translate(-272.920367, -273.029350) " points="79.4206229 80.8899176 466.420111 465.168783 79.7354582 464.851715"></polygon>
+                        </g>
+                        <g id="Group-5-Copy-6" filter="url(#filter-4)" transform="translate(596.308434, 171.907328) scale(1, -1) translate(-596.308434, -171.907328) translate(424.308434, 0.000000)">
+                            <polygon id="Rectangle-Copy-3" fill="#1967A9" transform="translate(171.560651, 172.109662) scale(1, -1) rotate(-135.000000) translate(-171.560651, -172.109662) " points="50.4323503 51.8361931 292.958084 51.5651524 292.688952 292.383131 50.1632181 292.654172"></polygon>
+                            <polygon id="Rectangle" fill="#1070C2" transform="translate(171.561000, 172.208544) rotate(-45.000000) translate(-171.561000, -172.208544) " points="50.4375351 51.7996097 292.823812 292.477144 50.298189 292.617478"></polygon>
+                        </g>
+                        <g id="Group-5-Copy-9" filter="url(#filter-5)" transform="translate(205.281928, 190.854626) rotate(87.000000) translate(-205.281928, -190.854626) translate(123.627309, 109.333806)">
+                            <polygon id="Rectangle-Copy-3" fill="#0675D4" transform="translate(81.467348, 81.728196) rotate(-45.000000) translate(-81.467348, -81.728196) " points="23.9176356 24.5839866 139.083434 24.5173474 139.017264 138.872201 23.8514657 138.93884"></polygon>
+                            <polygon id="Rectangle" fill="#0068C0" transform="translate(81.467514, 81.775007) rotate(-45.000000) translate(-81.467514, -81.775007) " points="23.9507848 24.59758 139.050413 138.885795 23.8846149 138.952434"></polygon>
+                        </g>
+                        <g id="Group-5-Copy-10" filter="url(#filter-6)" transform="translate(0.000000, 244.562461)">
+                            <polygon id="Rectangle-Copy-3" fill="#0675D4" transform="translate(61.340121, 61.536524) rotate(-45.000000) translate(-61.340121, -61.536524) " points="18.0085727 18.5102958 104.721645 18.4601204 104.671822 104.562599 17.9587506 104.612774"></polygon>
+                            <polygon id="Rectangle" fill="#0068C0" transform="translate(61.340246, 61.571770) rotate(-45.000000) translate(-61.340246, -61.571770) " points="18.0335321 18.5205308 104.696782 104.572834 17.98371 104.623009"></polygon>
+                        </g>
+                        <g id="Group-5-Copy-11" filter="url(#filter-7)" transform="translate(47.736546, 345.264651)">
+                            <polygon id="Rectangle-Copy-3" fill="#0675D4" transform="translate(92.010182, 92.304786) rotate(-45.000000) translate(-92.010182, -92.304786) " points="27.012859 27.7654437 157.082467 27.6901806 157.007734 156.843898 26.9381259 156.919161"></polygon>
+                            <polygon id="Rectangle" fill="#0068C0" transform="translate(92.010369, 92.357655) rotate(-45.000000) translate(-92.010369, -92.357655) " points="27.0502982 27.7807963 157.045173 156.85925 26.975565 156.934514"></polygon>
+                        </g>
+                        <g id="Group-5-Copy-13" filter="url(#filter-8)" transform="translate(269.644980, 546.669030)">
+                            <polygon id="Rectangle-Copy-3" fill="#0675D4" transform="translate(27.794742, 27.883737) rotate(-45.000000) translate(-27.794742, -27.883737) " points="8.1601345 8.38747778 47.4519952 8.36474206 47.4294195 47.3799275 8.13755887 47.4026632"></polygon>
+                            <polygon id="Rectangle" fill="#0068C0" transform="translate(27.794799, 27.899708) rotate(-45.000000) translate(-27.794799, -27.899708) " points="8.17144424 8.39211554 47.4407293 47.3845652 8.14886861 47.407301"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-5-Copy-3" filter="url(#filter-9)" transform="translate(600.598394, 493.046632) scale(1, -1) translate(-600.598394, -493.046632) translate(353.598394, 246.046632)">
+                        <polygon id="Rectangle-Copy-3" fill="#0675D4" transform="translate(246.572440, 246.803518) rotate(-45.000000) translate(-246.572440, -246.803518) " points="72.3911808 73.8474187 420.563381 74.0390862 420.753699 419.759618 72.5814986 419.567951"></polygon>
+                        <polygon id="Rectangle" fill="#0068C0" transform="translate(246.572440, 246.803518) rotate(-45.000000) translate(-246.572440, -246.803518) " points="72.3911808 73.8474187 420.753699 419.759618 72.5814986 419.567951"></polygon>
+                    </g>
+                    <g id="Group-5-Copy-12" filter="url(#filter-10)" transform="translate(114.000000, 376.000000)">
+                        <polygon id="Rectangle-Copy-3" fill="#0675D4" transform="translate(162.626169, 163.414357) rotate(-45.000000) translate(-162.626169, -163.414357) " points="47.7438244 49.3432195 277.828043 49.0214234 277.508513 277.485495 47.4242942 277.807291"></polygon>
+                        <polygon id="Rectangle" fill="#0068C0" transform="translate(162.626970, 163.641100) rotate(-45.000000) translate(-162.626970, -163.641100) " points="47.9043906 49.4090646 277.669079 277.55134 47.5848604 277.873136"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,59 +1,65 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package MNI
- */
+<!DOCTYPE html>
+<html lang="eg">
 
-?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>MNI</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
 
 	<?php wp_head(); ?>
+
 </head>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'mni' ); ?></a>
+<body>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	<div class="home">
+	<!-- Navigation -->
+		<header>
+			<div class="container-navigation">
+				<button class="hamburger hamburger--collapse" type="button">
+					<span class="hamburger-box">
+					  <span class="hamburger-inner"></span>
+				  </button>
+				</span>
+			<div class="topnav">
+				<a class="navbar-brand" href="#">
+					<img src="wp-content/themes/mni/assets/img/_src/mni-logo-blue.svg" alt="">
+				</a>
 				<?php
-			else :
+					wp_nav_menu(
+						array(
+							'menu' => 'primary',
+							'container' => '',
+							'theme_location' => 'primary'
+							
+						)
+						);
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$mni_description = get_bloginfo( 'description', 'display' );
-			if ( $mni_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $mni_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mni' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+				<span class="nav-content">
+				
+					<!-- <a class="nav-home" href="#home">Home</a>
+					<a class="nav-who" href="#news">Who we Are</a>
+					<a class="nav-about" href="#contact">About Us</a>
+					<a class="nav-work" href="#">Our Work</a> -->
+			</span>
+			</div>
+		</div>
+		</header>
+	<!-- Navigation -->

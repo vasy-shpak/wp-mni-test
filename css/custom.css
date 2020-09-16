@@ -1,0 +1,21 @@
+/*!
+Theme Name: MNI
+*/
+
+.topnav {
+    display: flex;
+}
+
+#menu-main-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.menu-item a {
+    margin-left: 35px;
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+}

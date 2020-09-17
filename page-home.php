@@ -19,69 +19,68 @@
 							<a href="#">Contact Us</a>
 						</button>
 				</div>
-	<!-- Wrapper with 3 features -->
-				<div class="wrapper-features owl-carousel">
-					<div class="item">
-						<img src="wp-content/themes/mni/assets/img/_src/group-6.svg" alt=""><br>
-						<span>Our Value</span>
-					</div>
-					<div class="item">
-						<img src="wp-content/themes/mni/assets/img/_src/group-7.svg" alt=""><br>
-						<span>Our Mission</span>
-					</div>
-					<div class="item">
-						<img src="wp-content/themes/mni/assets/img/_src/group-5.svg" alt=""><br>
-						<span>Our Vision</span>
-					</div>
-				</div>
+    <!-- Wrapper with 3 features -->
+                <?php
+                    $slides = carbon_get_the_post_meta( 'crb_slides' );
+                    echo '<div class="wrapper-features owl-carousel">';
+                    foreach ( $slides as $slide ) {
+                        echo '<div class="item">';
+                        echo wp_get_attachment_image( $slide['image'] );
+                        echo '<br>';
+                        echo '<span>' . $slide['title'] . '</span>';
+                        echo '</div>';
+                    }
+                    echo '</div>';
+                ?>
 		</div>
 
 		<div class="wrapper">
 
 	<!-- Features expo -->
-
-			<div class="features-expo">
-				<div class="feature-img">
-					<img src="wp-content/themes/mni/assets/img/_src/group-8.svg" alt="" />
-				</div>
-				<div class="feature-text">
-					<h2>Our Value</h2>
-					<p>We believe in the power of compassionate, motivated people working together to benefit society. We aspire to be open-hearted, compassionate and courageous in the way we work. We recognise the interconnected nature between ourselves and our environment. We aim to ensure our work is underpinned by kindness, integrity and respect towards ourselves, others and our environment.
-					</p>
-				</div>
-			</div>
+                <?php
+                    $values = carbon_get_the_post_meta( 'crb_slides' );
+                    foreach ( $values as $value ) {
+                        echo '<div class="features-expo">';
+                        echo '<div class="feature-img">';
+                        echo '<img src="' . wp_get_attachment_image_url( $value['description-image'], 'full' ) . '"/>';
+                        echo '</div>';
+                        echo '<div class="feature-text">';
+                        echo '<h2>' . $value['description-title'] . '</h2>';
+                        echo '<p>' . $value['description_text'] . '</p>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                ?>
 
 	<!-- Carousel -->
 			<div class="who-we-are">
-				<h2>Who We Are</h2>
-				<p>Our Trustees, Team and Advisors</p>
+				<h2><?php the_field('who_we_are_headline')?></h2>
+                <p><?php the_field('who_we_are_description')?></p>
 				<div class="s-carousel">
 					<div class="owl-carousel carousel-people">
-						<div class="carousel-person-item">
-							<img src="wp-content/themes/mni/assets/img/_src/2-removebg-preview.png" alt="">
-							<h3>Grattan Donnelly</h3>
-							<p>Qualified Mindfulness Based Stress Reduction teacher</p>
-						</div>
-						<div class="carousel-person-item">
-							<img src="wp-content/themes/mni/assets/img/_src/eilis-cullen-removebg-preview.png" alt="">
-							<h3>Eilis Cullen</h3>
-							<p>Psychotherapist and mindfulness teacher</p>
-						</div>
-						<div class="carousel-person-item">
-							<img src="wp-content/themes/mni/assets/img/_src/michael-griffith-removebg-preview.png" alt="">
-							<h3>Michael Griffith</h3>
-							<p>The founding Chairperson of Mindful Nation Ireland</p>
-						</div>
-						<div class="carousel-person-item">
-							<img src="wp-content/themes/mni/assets/img/_src/photo-mary-lovegrove-copy-removebg-preview.png" alt="">
-							<h3>Mary Lovegrove</h3>
-							<p>Co-Founder and CEO of Mindful Nation Ireland</p>
-						</div>
-						<div class="carousel-person-item">
-							<img src="wp-content/themes/mni/assets/img/_src/photo-mary-lovegrove-copy-removebg-preview.png" alt="">
-							<h3>Mary Lovegrove</h3>
-							<p>Co-Founder and CEO of Mindful Nation Ireland</p>
-						</div>
+                    <?php
+                        $args = array(
+                        'post_type' => 'add_people'
+                        );
+                        $persons = new WP_Query( $args );
+                        if( $persons->have_posts() ) {
+                        while( $persons->have_posts() ) {
+                            $persons->the_post();
+                            ?>
+                            <div class="carousel-person-item">
+                                <a href="<?php echo get_post_permalink( )?>">
+                                <?php the_post_thumbnail( 'full' ); ?>
+                                <h3><?php the_title() ?></h3>
+                                <p><?php the_excerpt() ?></p>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                        }
+                        else {
+                        echo 'Oh ohm no products!';
+                        }
+                    ?>
 					</div>
 				</div>
 			</div>
@@ -92,7 +91,33 @@
 				<h2>Media Coverage</h2>
 				<h3>Be aware of our latest news</h3>
 				<div class="wrapper-news-links">
-					<a href="" class="link-item" style="background-image: url('wp-content/themes/mni/assets/img/_src/bitmap.png');">
+
+                <?php
+                    $args = array(
+                    'post_type' => 'add_media'
+                        );
+                    $articles = new WP_Query( $args );
+                    if( $articles->have_posts() ) {
+                    while( $articles->have_posts() ) {
+                        $articles->the_post();
+                        ?>
+
+                            <a href="<?php echo get_post_permalink( )?>" class="link-item" style="background-image: url('wp-content/themes/mni/assets/img/_src/bitmap.png');">
+						        <div class="article-name">
+                                    <?php the_post_thumbnail( 'full' ); ?>  
+							        <h3><?php the_excerpt() ?></h3>
+						        </div>
+					        </a>
+
+                    <?php
+                    }
+                    }
+                    else {
+                    echo 'Oh ohm no products!';
+                    }
+                ?>
+
+					<!-- <a href="" class="link-item" style="background-image: url('wp-content/themes/mni/assets/img/_src/bitmap.png');">
 						<div class="article-name">
 							<img src="wp-content/themes/mni/assets/img/_src/paper.png" alt="">
 							<h3>Meditation classes will help TDs to handle work pressures</h3>
@@ -121,7 +146,7 @@
 							<img src="wp-content/themes/mni/assets/img/_src/paper3.png" alt="">
 							<h3>Meditation classes will help TDs to handle work pressures</h3>
 						</div>
-					</a>
+					</a> -->
 
 				</div>
 			</div>

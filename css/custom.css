@@ -19,3 +19,11 @@ Theme Name: MNI
     font-weight: 500;
     text-transform: uppercase;
 }
+
+.item {
+    padding-bottom: 0 !important;
+}
+
+.item img {
+    width: auto !important;
+}

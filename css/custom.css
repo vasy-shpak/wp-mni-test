@@ -27,3 +27,11 @@ Theme Name: MNI
 .item img {
     width: auto !important;
 }
+
+.form-item {
+color: #000 !important;
+}
+
+/* .form-item:placeholder {
+    color: #93bfe4;
+} */

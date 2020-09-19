@@ -96,6 +96,38 @@ function add_media(){
 	) );
 }
 
+add_action('init', 'add_network');
+function add_network(){
+	register_post_type('add_network', array(
+		'labels'             => array(
+			'name'               => 'Networks', 
+			'singular_name'      => 'Network', 
+			'add_new'            => 'Add new',
+			'add_new_item'       => 'Add new Network',
+			'edit_item'          => 'Edit information',
+			'new_item'           => 'New iformation',
+			'view_item'          => 'View Network',
+			'search_items'       => 'Search Network',
+			'not_found'          => 'Not found',
+			'not_found_in_trash' => '',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Networks'
+
+		  ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 7,
+		'supports'           => array('title','thumbnail',)
+	) );
+}
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );

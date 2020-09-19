@@ -54,8 +54,8 @@
 
 	<!-- Carousel -->
 			<div class="who-we-are">
-				<h2><?php the_field('who_we_are_headline')?></h2>
-                <p><?php the_field('who_we_are_description')?></p>
+				<h2><?php the_field('who_we_are_headline'); ?></h2>
+                <p><?php the_field('who_we_are_description'); ?></p>
 				<div class="s-carousel">
 					<div class="owl-carousel carousel-people">
                     <?php
@@ -68,10 +68,10 @@
                             $persons->the_post();
                             ?>
                             <div class="carousel-person-item">
-                                <a href="<?php echo get_post_permalink( )?>">
-                                <?php the_post_thumbnail( 'full' ); ?>
-                                <h3><?php the_title() ?></h3>
-                                <p><?php the_excerpt() ?></p>
+                                <a href="<?php echo get_post_permalink()?>">
+                                <?php the_post_thumbnail( 'full' )?>
+                                <h3><?php the_title()?></h3>
+                                <p><?php the_excerpt()?></p>
                                 </a>
                             </div>
                             <?php
@@ -80,6 +80,7 @@
                         else {
                         echo 'Oh ohm no products!';
                         }
+                        wp_reset_postdata();
                     ?>
 					</div>
 				</div>
@@ -88,8 +89,10 @@
 	<!-- Media Links Gallery -->
 
 			<div class="wrapper-media-coverage">
-				<h2>Media Coverage</h2>
-				<h3>Be aware of our latest news</h3>
+
+				<h2><?php the_field('who_we_are_headline'); ?></h2>
+                <h3><?php the_field('media_coverage_headline'); ?></h3>
+                
 				<div class="wrapper-news-links">
 
                 <?php
@@ -102,10 +105,10 @@
                         $articles->the_post();
                         ?>
 
-                            <a href="<?php echo get_post_permalink( )?>" class="link-item" style="background-image: url('wp-content/themes/mni/assets/img/_src/bitmap.png');">
+                            <a href="<?php echo get_post_permalink( )?>" class="link-item" style="background-image: url('<?php the_field('background_image'); ?>');">
 						        <div class="article-name">
                                     <?php the_post_thumbnail( 'full' ); ?>  
-							        <h3><?php the_excerpt() ?></h3>
+							        <h3><?php the_excerpt(); ?></h3>
 						        </div>
 					        </a>
 
@@ -115,38 +118,9 @@
                     else {
                     echo 'Oh ohm no products!';
                     }
+                    wp_reset_postdata();
                 ?>
 
-					<!-- <a href="" class="link-item" style="background-image: url('wp-content/themes/mni/assets/img/_src/bitmap.png');">
-						<div class="article-name">
-							<img src="wp-content/themes/mni/assets/img/_src/paper.png" alt="">
-							<h3>Meditation classes will help TDs to handle work pressures</h3>
-						</div>
-					</a>
-					<a href="" class="link-item" style="background-image: url('wp-content/themes/mni/assets/img/_src/bitmap1.png');">
-						<div class="article-name">
-							<img src="wp-content/themes/mni/assets/img/_src/paper1.png" alt="">
-							<h3>Meditation classes will help TDs to handle work pressures</h3>
-						</div>
-					</a>
-					<a href="" class="link-item" style="background-image: url('wp-content/themes/mni/assets/img/_src/bitmap2.png');">
-						<div class="article-name">
-							<img src="wp-content/themes/mni/assets/img/_src/paper.png" alt="">
-							<h3>Meditation classes will help TDs to handle work pressures</h3>
-						</div>
-					</a>
-					<a href="" class="link-item" style="background-image: url('wp-content/themes/mni/assets/img/_src/bitmap3.png');">
-						<div class="article-name">
-							<img src="wp-content/themes/mni/assets/img/_src/paper2.png" alt="">
-							<h3>Meditation classes will help TDs to handle work pressures</h3>
-						</div>
-					</a>
-					<a href="" class="link-item" style="background-image: url('wp-content/themes/mni/assets/img/_src/bitmap4.png');">
-						<div class="article-name">
-							<img src="wp-content/themes/mni/assets/img/_src/paper3.png" alt="">
-							<h3>Meditation classes will help TDs to handle work pressures</h3>
-						</div>
-					</a> -->
 
 				</div>
 			</div>
@@ -157,24 +131,40 @@
 				<h2>Professional Networks</h2>
 				<h3>Go to the link to learn more about professional network</h3>
 				<div class="networks-container">
-					<a href="" class="network-item">
-						<img src="wp-content/themes/mni/assets/img/_src/group-12.png" alt="">
-					</a>
-					<a href="" class="network-item">
-						<img src="wp-content/themes/mni/assets/img/_src/group-13.svg" alt="">
-					</a>
+                <?php
+                        $args = array(
+                        'post_type' => 'add_network'
+                        );
+                        $networks = new WP_Query( $args );
+                        if( $networks->have_posts() ) {
+                        while( $networks->have_posts() ) {
+                            $networks->the_post();
+                            ?>
+                            <a href="<?php echo get_post_permalink( )?>" class="network-item">
+                                <?php the_post_thumbnail( 'full' ); ?>
+					        </a>
+                            <?php
+                        }
+                        }
+                        else {
+                        echo 'Oh ohm no products!';
+                        }
+                        wp_reset_postdata();
+                    ?>
 				</div>
 			</div>
 
 	<!-- Contact Us Section -->
 
 			<div class="wrapper-contac-us">
-				<h2>Contact Us</h2>
+                <h2><?php $field = get_fields();
+                            var_dump($field)
+                ?></h2>
 				<h3>Tell us about your work</h3>
 				<div class="wrapper-contact-form">
 
 					<div class="information-column">
-						<h4>Mary Lovegrove</h4>
+						<h4><?php the_field( 'nformation-column' )?></h4>
 						<p>Director & Co-Founder</p>
 						<a href="mailto: mindfulnationireland@gmail.com" class="email"><i class="far fa-envelope"></i>  mindfulnationireland@gmail.com</a><br>
 						<a href="tel:+353 86 823 9502" class="phone"><i class="fas fa-phone"></i>  +353 86 823 9502</a><br>
@@ -188,13 +178,16 @@
 					</div>
 
 					<div class="form-column">
-						<form action="/action_page.php">
+                        <?php echo do_shortcode( '[contact-form-7 id="119" title="Contact Us"]' ); ?>
+
+
+						<!-- <form action="/action_page.php">
 							<input class="form-item" type="text" id="fname" name="fname" value="Name"><br>
 							<input class="form-item" type="text" id="email" name="email" value="Email"><br><br>
 							<textarea class="form-item" id="message" name="message" rows="4" cols="30">Message
 								</textarea><br>
 							<input class="form-button" type="submit" value="Send message">
-						  </form>
+						  </form> -->
 
 					</div>
 				</div>

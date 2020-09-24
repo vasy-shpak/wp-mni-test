@@ -5,7 +5,7 @@
 				<span>© 2019 Mindfull Nation Ireland</span><br>
 				<span>Developed By:
 					<a href="">
-						<img src="wp-content/themes/mni/assets/img/_src/devensis.png" alt="">
+						<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/_src/devensis.png" alt="">
 					</a>
 				</span>
 			</div>

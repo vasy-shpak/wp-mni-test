@@ -4,22 +4,11 @@
 <head>
 
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
 
-	<title>MNI</title>
-	<meta name="description" content="">
+	<title><?php echo wp_get_document_title(); ?></title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
 
 
 	<?php wp_head(); ?>
@@ -39,7 +28,16 @@
 				</span>
 			<div class="topnav">
 				<a class="navbar-brand" href="#">
-					<img src="wp-content/themes/mni/assets/img/_src/mni-logo-blue.svg" alt="">
+					<?php
+					if(function_exists('the_cusutom_logo')){
+
+						$custom_logo_id = get_theme_mod('custom-logo');
+						$logo = wp_get_attachment_image_src( $custom_logo_id );
+
+					}
+					?>
+					<!-- <img src="wp-content/themes/mni/assets/img/_src/mni-logo-blue.svg" alt=""> -->
+					<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/_src/mni-logo-blue.svg" alt="">
 				</a>
 				<?php
 					wp_nav_menu(
@@ -53,13 +51,20 @@
 				?>
 
 				<span class="nav-content">
-				
-					<!-- <a class="nav-home" href="#home">Home</a>
-					<a class="nav-who" href="#news">Who we Are</a>
-					<a class="nav-about" href="#contact">About Us</a>
-					<a class="nav-work" href="#">Our Work</a> -->
-			</span>
+					<?php 
+						$slug = get_page_template_slug();
+						$pos = strrpos($slug, 'home');
+						if(!$pos){ 
+							?>
+							<div class="nav-contact-button">
+									<button type="button">
+										<a href="#">Contact Us</a>
+									</button>
+								</div>
+								<?php
+						}
+					?>
+				</span>
 			</div>
 		</div>
 		</header>
-	<!-- Navigation -->

@@ -22,11 +22,21 @@ Theme Name: MNI
 
 .item {
     padding-bottom: 0 !important;
+    cursor: pointer; 
 }
 
 .item img {
     width: auto !important;
 }
+
+.features-expo {
+    display: none;
+}
+
+.features-expo.active {
+    display: flex;
+}
+
 
 .form-item {
 color: #000 !important;

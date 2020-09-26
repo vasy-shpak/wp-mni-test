@@ -10,13 +10,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
 	<?php wp_head(); ?>
 
 </head>
 
 <body>
-
 	<div class="home">
 	<!-- Navigation -->
 		<header>
@@ -28,16 +26,7 @@
 				</span>
 			<div class="topnav">
 				<a class="navbar-brand" href="#">
-					<?php
-					if(function_exists('the_cusutom_logo')){
-
-						$custom_logo_id = get_theme_mod('custom-logo');
-						$logo = wp_get_attachment_image_src( $custom_logo_id );
-
-					}
-					?>
-					<!-- <img src="wp-content/themes/mni/assets/img/_src/mni-logo-blue.svg" alt=""> -->
-					<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/_src/mni-logo-blue.svg" alt="">
+					<?php the_custom_logo(); ?>
 				</a>
 				<?php
 					wp_nav_menu(

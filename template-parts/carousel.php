@@ -1,7 +1,7 @@
 <!-- Carousel -->
 <div class="who-we-are">
-				<h2><?php the_field('who_we_are_headline'); ?></h2>
-                <p><?php the_field('who_we_are_description'); ?></p>
+				<h2>Who We Are</h2>
+                <p>Our Trustees, Team and Advisors</p>
 				<div class="s-carousel">
 					<div class="owl-carousel carousel-people">
                     <?php

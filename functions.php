@@ -130,6 +130,38 @@ function add_network(){
 	) );
 }
 
+add_action('init', 'add_projects');
+function add_projects(){
+	register_post_type('projects', array(
+		'labels'             => array(
+			'name'               => 'Our Work', 
+			'singular_name'      => 'Project', 
+			'add_new'            => 'Add new',
+			'add_new_item'       => 'Add new Project',
+			'edit_item'          => 'Edit information',
+			'new_item'           => 'New iformation',
+			'view_item'          => 'View Project',
+			'search_items'       => 'Search Project',
+			'not_found'          => 'Not found',
+			'not_found_in_trash' => '',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Our Work'
+
+		  ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 7,
+		'supports'           => array('title','thumbnail','editor','custom-fields','excerpt')
+	) );
+}
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );

@@ -39,9 +39,88 @@ Theme Name: MNI
 
 
 .form-item {
-color: #000 !important;
+    color: #000 !important;
 }
 
-/* .form-item:placeholder {
-    color: #93bfe4;
-} */
+blockquote {
+    width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.icon::before {
+    display: block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 48px;
+    color: #3a88f4;
+    opacity: 0.3;
+}
+
+blockquote::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10d";
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 64px;
+    color: #3a88f4;
+    opacity: 0.3;
+}
+
+blockquote 
+    p {
+    color: #3a88f4 !important;
+    opacity: 0.8;
+	font-size: 18px !important;
+	font-weight: 300;
+	line-height: 1.5 !important;
+}
+
+.compatrment-body h4 {
+    width: 100%;
+    max-width: 650px;
+    margin-left: 50%;
+    text-align: left;
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.75;
+    margin-bottom: 0;
+}
+
+.compatrment-body h5 {
+    width: 100%;
+    max-width: 650px;
+    margin-left: 50%;
+    text-align: left;
+    color: #000;
+    opacity: 0.7;
+	font-size: 14px;
+	font-weight: 300;
+    margin-bottom: 0;
+}
+
+.link-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (max-width: 769px) {
+    .topnav 
+        ul {
+            display: none;
+    }
+
+
+
+
+
+
+}

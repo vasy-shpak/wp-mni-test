@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="301" height="671" viewBox="0 0 301 671">
+    <defs>
+        <filter id="a" width="115.7%" height="115.7%" x="-7.9%" y="-7.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.220443619 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="b" width="193.3%" height="193.4%" x="-46.6%" y="-46.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.220443619 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="c" width="152.7%" height="152.7%" x="-26.3%" y="-26.4%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.220443619 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="d" width="170%" height="170.2%" x="-35%" y="-35%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.220443619 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="e" width="146.6%" height="147.2%" x="-23.3%" y="-23.4%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.220443619 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="f" width="254.9%" height="255.3%" x="-77.2%" y="-77.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.220443619 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="g" width="130.7%" height="130.7%" x="-15.3%" y="-15.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="11"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.220443619 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g filter="url(#a)" transform="translate(142.51 15.053)">
+            <path fill="#1787E6" d="M1.232 274.991L274.884 1.788l271.724 271.28L272.957 546.27z"/>
+            <path fill="#1978C7" d="M1.232 274.991l545.376-1.924-273.651 273.204z"/>
+        </g>
+        <g filter="url(#b)" transform="translate(275.078 5.462)">
+            <path fill="#0675D4" d="M.207 46.314L46.167.301l45.636 45.69-45.96 46.012z"/>
+            <path fill="#0068C0" d="M.207 46.314l91.596-.324-45.96 46.013z"/>
+        </g>
+        <g filter="url(#c)" transform="rotate(87 122.313 182.756)">
+            <path fill="#0675D4" d="M.366 82.015L81.754.533l80.814 80.908-81.387 81.482z"/>
+            <path fill="#0068C0" d="M.366 82.015l162.202-.574-81.387 81.482z"/>
+        </g>
+        <g filter="url(#d)" transform="translate(16 190.562)">
+            <path fill="#0675D4" d="M.276 61.752L61.556.402l60.848 60.918-61.28 61.351z"/>
+            <path fill="#0068C0" d="M.276 61.752l122.128-.432-61.28 61.351z"/>
+        </g>
+        <g filter="url(#e)" transform="translate(63.737 291.265)">
+            <path fill="#0675D4" d="M.414 92.629L92.334.602l91.272 91.379-91.92 92.026z"/>
+            <path fill="#0068C0" d="M.414 92.629l183.192-.648-91.92 92.026z"/>
+        </g>
+        <g filter="url(#f)" transform="translate(285.645 492.669)">
+            <path fill="#0675D4" d="M.125 27.982L27.893.182l27.571 27.604-27.767 27.8z"/>
+            <path fill="#0068C0" d="M.125 27.982l55.34-.196-27.768 27.8z"/>
+        </g>
+        <g filter="url(#g)" transform="translate(130 322)">
+            <path fill="#0675D4" d="M.732 163.988L163.198 1.066l161.323 161.775-162.467 162.921z"/>
+            <path fill="#0068C0" d="M.732 163.988l323.789-1.147-162.467 162.921z"/>
+        </g>
+    </g>
+</svg>
